@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module define a blueprint for routes with Blueprint object"""
+"""This module defines blueprint for routes with Blueprint object"""
 from flask import Blueprint
 
 
