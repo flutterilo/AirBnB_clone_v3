@@ -18,7 +18,7 @@ cors = CORS(app, resources={r"/api/v1/*": {"origins": "0.0.0.0"}})
 
 @app.teardown_appcontext
 def teardown(self):
-    """Removes the current SQLAlchemy Session"""
+    """Removes current SQLAlchemy Session"""
     return storage.close()
 
 
