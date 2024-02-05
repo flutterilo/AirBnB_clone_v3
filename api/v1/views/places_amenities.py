@@ -16,7 +16,7 @@ mode = getenv("HBNB_TYPE_STORAGE")
 @swag_from('documentation/place_amenity/get_places_amenities.yml',
            methods=['GET'])
 def amenities_from_place(place_id):
-    """Get all amenities of a place object"""
+    """Get all amenities of place object"""
     place = storage.get(Place, place_id)
     if place is None:
         abort(404)
